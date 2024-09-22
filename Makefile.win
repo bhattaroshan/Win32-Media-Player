@@ -1,0 +1,36 @@
+# Project: RB Super Player
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = RB_Super_Player_private.res
+OBJ  = mainform.o registry.o $(RES)
+LINKOBJ  = mainform.o registry.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -mwindows  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = "RB Super Player.exe"
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before "RB Super Player.exe" all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "RB Super Player.exe" $(LIBS)
+
+mainform.o: mainform.cpp
+	$(CC) -c mainform.cpp -o mainform.o $(CFLAGS)
+
+registry.o: registry.cpp
+	$(CC) -c registry.cpp -o registry.o $(CFLAGS)
+
+RB_Super_Player_private.res: RB_Super_Player_private.rc record.rc button.rc slider.rc 
+	$(WINDRES) -i RB_Super_Player_private.rc --input-format=rc -o RB_Super_Player_private.res -O coff 

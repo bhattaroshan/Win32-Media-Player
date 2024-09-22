@@ -1,0 +1,19 @@
+#include"buttons.h"
+
+IDD_BMP_LEAVE_RECORD BITMAP "bitmaps\\leave_record.bmp"
+IDD_BMP_HOVER_RECORD BITMAP "bitmaps\\hover_record.bmp"
+IDD_BMP_CLICK_RECORD BITMAP "bitmaps\\click_record.bmp"
+
+IDD_BMP_LEAVE_PLAY BITMAP "bitmaps\\leave_play.bmp"
+IDD_BMP_HOVER_PLAY BITMAP "bitmaps\\hover_play.bmp"
+IDD_BMP_CLICK_PLAY BITMAP "bitmaps\\click_play.bmp"
+
+IDD_BMP_LEAVE_PAUSE BITMAP "bitmaps\\leave_pause.bmp"
+IDD_BMP_HOVER_PAUSE BITMAP "bitmaps\\hover_pause.bmp"
+IDD_BMP_CLICK_PAUSE BITMAP "bitmaps\\click_pause.bmp"
+
+IDD_BMP_LEAVE_STOP BITMAP "bitmaps\\leave_stop.bmp"
+IDD_BMP_HOVER_STOP BITMAP "bitmaps\\hover_stop.bmp"
+IDD_BMP_CLICK_STOP BITMAP "bitmaps\\click_stop.bmp"
+
+

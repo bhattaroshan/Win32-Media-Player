@@ -1,0 +1,5 @@
+
+#include"sliders.h"
+
+IDD_BMP_LSLIDER BITMAP "bitmaps\\leave_slider.bmp"
+IDD_BMP_HSLIDER BITMAP "bitmaps\\hover_slider.bmp"

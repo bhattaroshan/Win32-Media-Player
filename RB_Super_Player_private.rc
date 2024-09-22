@@ -1,0 +1,16 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT! */
+
+#include "record.rc"
+#include "button.rc"
+#include "slider.rc"
+
+A ICON MOVEABLE PURE LOADONCALL DISCARDABLE "RB Super Player.ico"
+
+//
+// SUPPORT FOR WINDOWS XP THEMES:
+// THIS WILL MAKE THE PROGRAM USE THE COMMON CONTROLS
+// LIBRARY VERSION 6.0 (IF IT IS AVAILABLE)
+//
+1 24 "RB Super Player.exe.Manifest"
+
